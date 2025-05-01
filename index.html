@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sandbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #000;
+    }
+
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2em;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 1em;
+    }
+
+    .auth-buttons button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('eye.jpeg'); 
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 2em;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    .hero .buttons {
+      display: flex;
+      gap: 1em;
+    }
+
+    .hero .buttons button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    footer {
+      height: 60px;
+      background-color: #000;
+    }
+
+    .bottom-bar {
+      height: 10px;
+      background-color: #F5A451;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="sandbox.jpeg" alt="Logo" /> 
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button>LOG IN</button>
+      <button>SIGN UP</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Connect, Learn, and Grow Your Business Today</h1>
+      <p>Welcome to your ultimate business hub, where entrepreneurs unite to share insights, ideas, and experiences. Dive in to discover resources that will elevate your startup journey.</p>
+      <div class="buttons">
+        <button>Explore</button>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
+  <div class="bottom-bar"></div>
+</body>
+</html>
+
