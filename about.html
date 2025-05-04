@@ -3,18 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>sandbox</title>
+  <title>About Us</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #F5A451;
+      color: white;
+  }
+  .hero-section {
+    padding: 4rem 2rem;
+  }
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #fcefe8;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.columns h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #262424;
+}
+
+.columns p {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: #333;
+  cursor: pointer;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+  
+</style>
 <body>
-  <div class="container">
-    <div class="image-box">
-      <img src="laptop.jpeg" />
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+       <img src="images/laptop.jpeg" alt="laptop">
     </div>
-    <div class="content">
+    <div class="hero-content">
       <h1>Empower Your Business Journey with Us</h1>
       <p>Our platform offers invaluable resources for aspiring entrepreneurs. Share your startup ideas, learn from others, and build lasting connections.</p>
-      <div class="features">
+      <div class="columns">
         <div>
           <h3>Learn Business</h3>
           <p>Discover essential insights and strategies to elevate your entrepreneurial skills.</p>
@@ -25,10 +143,11 @@
         </div>
       </div>
       <div class="buttons">
-        <button>Join</button>
-        <button>Learn more</button>
+        <button class="btn">Join</button>
+          <button class="btn">Learn more</button>
       </div>
     </div>
   </div>
+</section>
 </body>
 </html>

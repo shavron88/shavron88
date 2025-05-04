@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>sandbox</title>
+  <title>SandBox</title>
   <style>
     * {
       margin: 0;
@@ -35,6 +35,31 @@
       background-color: #333;
       z-index: 1000;
     }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+   } 
+   .nav-links li
+    {
+      margin: 0 15px;
+    } 
+      .nav-links a
+    {
+       color: white;
+       text-decoration: none;
+       font-size: 18px;
+       padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+
+   }
     nav ul {
       display: flex;
       list-style: none;
@@ -46,6 +71,22 @@
       color: black;
       font-weight: bold;
     }
+    @media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}
 
     .auth-buttons {
       display: flex;
@@ -60,6 +101,7 @@
       border-radius: 20px;
       cursor: pointer;
       font-weight: bold;
+      
     }
 
     .hero {
@@ -103,13 +145,17 @@
     .hero button {
      padding: 0.8em 1.5em;
      margin: 0.5em;
-     border: none;
-     background-color: black;
-     color: #F5A451;
+     border: 3px solid black;
+     background-color: white;
+     color: black;
      cursor: pointer;
-     border-radius: 5px;
+     border-radius: 20px;
     }
-    
+    .btn:hover {
+  background-color: #595656;
+  cursor: pointer;
+  border-radius: 20px;
+    }
 
     footer {
       height: 60px;
@@ -167,8 +213,8 @@
       <h1>Connect, Learn, and Grow Your Business Today</h1>
       <p>Welcome to your ultimate business hub, where entrepreneurs unite to share insights, ideas, and experiences. Dive in to discover resources that will elevate your startup journey.</p>
       <div class="buttons">
-        <button>Explore</button>
-        <button>Sign Up</button>
+        <button class="btn">Explore</button>
+          <button class="btn">Sign Up</button>
       </div>
     </div>
   </section>
@@ -177,4 +223,3 @@
   <div class="bottom-bar"></div>
 </body>
 </html>
-
