@@ -120,7 +120,7 @@ body {
     color: black;
   }
   
-  .login-form {
+  .signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,25 +128,23 @@ body {
   
   .form-row {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
+    gap: 20px;
   }
   
-  .signup-group {
+  .signup-form {
     flex: 0 0 48%;
     display: flex;
     flex-direction: column;
     text-align: left;
   }
   
-  .signup-group label {
+  .signup-form label {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 14px;
   }
   
-  .signup-group input {
+  .signup-form input {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #070707;
@@ -154,8 +152,11 @@ body {
     font-size: 16px;
   }
   
-  .submit-row {
-    margin-top: 20px;
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   
   button {
@@ -165,6 +166,69 @@ body {
     background-color: #e3a451;
     cursor: pointer;
     font-size: 16px;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+
+  .form-row input {
+    width: 200px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    flex: 1;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+  }
+  .form-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .form-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #161616;
+  }
+  .form-group {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #070707;
+    background-color: #e0e0e0;
+    font-size: 16px;
+  }
+  .form-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e3a451;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .form-group button:hover {
+    background-color: #d39e3e;
   }
   @media (max-width: 768px) {
     header {
