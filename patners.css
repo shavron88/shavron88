@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .partners-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .partners-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .partners-logos img {
+    height: 60px;
+    object-fit: contain;
+  }
+  
