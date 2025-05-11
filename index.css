@@ -344,6 +344,30 @@ footer {
   text-decoration: underline;
 }
 
+/* Partners Section */
+.partners-section {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .partners-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .partners-logos img {
+    height: 60px;
+    object-fit: contain;
+  }
 /* Contact Section */
 .contact {
   background-color: #000;
